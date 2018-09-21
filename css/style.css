@@ -11,7 +11,6 @@ header {
     margin: 0 auto;
 }
 
-/*ask why no override font color*/
 #name {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -33,32 +32,68 @@ h1 {
     float: left;
 }
 
+.link a:hover {
+    color: #4aaaa5;
+}
+
 main {
-    background-color: #ffffff;
     border-top: 5px solid #cccccc;
+    background-color: #ffffff;
+    background-image: url("../images/full-bloom.png");
+    padding: 30px;
 }
 
-#pic-background {
-    
-}
-
-#about-me {
+#page-main {
+    background-color: #ffffff;
     width: 960px;
-    margin: 30px auto 100px auto;
+    margin: 10px auto 70px auto;
     border:5px solid #dddddd;
+    padding: 20px;
+    overflow: auto;
 }
 
-h1#about-me-color {
+h1#color {
     color: #4aaaa5;
 }
 
 #pic-profile {
     float: left;
+    width: 120px;
+    height: 120px;
+    margin: 20px 30px 0px 30px;
 }
 
-footer {/*update for bonus*/
+p {
+    line-height: 30px;
+}
+
+footer {
     background-color: #666666;
+    border-top: 10px solid #4aaaa5;
     text-align: center;
     padding: 20px 0px 3px 0px;
     color: silver;
+    margin-top: -20px;
+}
+
+.project { /*for now, all projects use same placeholder pic*/
+    background-image: url("../images/placeholder.png");
+    width: 290px;
+    height: 170px;
+    float: left;
+    margin: 20px;
+    position: relative;
+}
+
+.proj-name {
+    position: absolute;
+    background-color: #4aaaa5;
+    text-align: center;
+    bottom: 5px;
+    right: 0px;
+    left: 0px;
+}
+
+.proj-name:hover { /*Since these links have teal background, use white for visibility*/
+    color: #ffffff;
 }
