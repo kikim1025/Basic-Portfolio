@@ -1,6 +1,9 @@
 body {
     color: #777777;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header {
@@ -41,11 +44,12 @@ main {
     background-color: #ffffff;
     background-image: url("../images/full-bloom.png");
     padding: 30px;
+    flex: 1;
 }
 
 #page-main {
     background-color: #ffffff;
-    width: 960px;
+    width: 920px;
     margin: 10px auto 70px auto;
     border:5px solid #dddddd;
     padding: 20px;
@@ -73,7 +77,6 @@ footer {
     text-align: center;
     padding: 20px 0px 3px 0px;
     color: silver;
-    margin-top: -20px;
 }
 
 .project { /*for now, all projects use same placeholder pic*/
@@ -89,6 +92,7 @@ footer {
     position: absolute;
     background-color: #4aaaa5;
     text-align: center;
+    padding: 5px;
     bottom: 5px;
     right: 0px;
     left: 0px;
@@ -96,4 +100,28 @@ footer {
 
 .proj-name:hover { /*Since these links have teal background, use white for visibility*/
     color: #ffffff;
+}
+
+#input-name {
+    width: 920px;
+    margin-bottom: 20px;
+}
+
+#input-email {
+    width: 920px;
+    margin-bottom: 20px;
+}
+
+#input-message {
+    width: 920px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 5px 25px;
+    border-color: #4aaaa5;
+    margin-bottom: 10px;
 }
