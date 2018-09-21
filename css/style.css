@@ -35,6 +35,12 @@ h1 {
     float: left;
 }
 
+a {
+    color: #777777;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+}
+
 .link a:hover {
     color: #4aaaa5;
 }
@@ -91,6 +97,7 @@ footer {
 .proj-name {
     position: absolute;
     background-color: #4aaaa5;
+    color: #ffffff;
     text-align: center;
     padding: 5px;
     bottom: 5px;
@@ -98,8 +105,8 @@ footer {
     left: 0px;
 }
 
-.proj-name:hover { /*Since these links have teal background, use white for visibility*/
-    color: #ffffff;
+.proj-name:hover { /*Since these links have teal background, use black for visibility*/
+    color: #000000;
 }
 
 #input-name {
